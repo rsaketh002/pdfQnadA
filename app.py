@@ -17,8 +17,9 @@ from llama_index.llms import GradientBaseModelLLM
 # !pip install -q tiktoken==0.4.0
 
 # Set environment variables
-os.environ['GRADIENT_ACCESS_TOKEN'] = "7sVvIm3sH0E5MxAdpzFPaDYKsNoqduOy"
-os.environ['GRADIENT_WORKSPACE_ID'] = "fb6638a7-b518-46be-91a7-922f49e1cc32_workspace"
+GRADIENT_ACCESS_TOKEN = st.secrets["GRADIENT_ACCESS_TOKEN"]
+GRADIENT_WORKSPACE_ID = st.secrets["GRADIENT_WORKSPACE_ID"]
+
 
 # Load Streamlit app
 def main():
